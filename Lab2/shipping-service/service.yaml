@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: shipping-service-svc
+  labels:
+    app: shipping-service
+spec:
+  type: NodePort
+  ports:
+    - name: app-port
+      targetPort: app-port
+      port: 3000
+  selector:
+    app: shipping-service

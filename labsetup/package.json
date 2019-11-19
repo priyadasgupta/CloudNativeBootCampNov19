@@ -1,0 +1,15 @@
+{
+  "name": "labsetup",
+  "version": "1.0.0",
+  "description": "This is a starting lab to set up all the tools and environment access for effective completion of the next labs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

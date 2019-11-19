@@ -1,0 +1,19 @@
+@startuml environment-diagram
+
+    actor developer
+
+    rectangle "IBM Cloud" as ibmcloud #DeepSkyBlue{
+        rectangle "SSH Gateway" as ssh
+        rectangle "IBM Kube Service" as iks #MediumSeaGreen{
+            artifact "Microservice" as app1
+        }
+    }
+
+    rectangle "Katacoda OpenShift" as openshift #Red{
+      artifact "Microservice" as app2
+    }
+
+    developer -r-> app2
+    developer -d-> ssh
+    ssh -r-> app1
+@enduml
